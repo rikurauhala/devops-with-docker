@@ -1,0 +1,12 @@
+$ docker run --name logs devopsdockeruh/exec_bash_exercise
+
+$ docker attach --sig-proxy=false logs
+
+Ctrl+C
+
+$ docker exec -it logs bash
+
+$ tail -f ./logs.txt
+
+Secret message is:
+"Docker is easy"
