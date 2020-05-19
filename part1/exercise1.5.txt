@@ -1,0 +1,11 @@
+$ docker run -d -it --rm --name curlbuntu ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+$ docker exec -it curlbuntu bash
+
+$ apt-get update && apt-get install -y curl
+
+$ exit
+
+$ docker attach curlbuntu
+
+$ helsinki.fi
