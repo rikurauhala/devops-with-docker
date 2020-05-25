@@ -1,0 +1,5 @@
+Create a new log file:
+$ touch logs.txt
+
+Run:
+$ docker run --rm -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
