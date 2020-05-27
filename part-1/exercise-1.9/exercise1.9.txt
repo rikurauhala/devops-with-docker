@@ -1,0 +1,8 @@
+Run:
+$ docker run --rm -p 8080:80 devopsdockeruh/ports_exercise
+
+Open in browser:
+http://localhost:8080/
+
+Message:
+"Ports configured correctly!!"
