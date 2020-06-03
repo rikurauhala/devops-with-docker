@@ -1,0 +1,24 @@
+Build backend:
+$ docker build -t backend .
+
+Build frontend:
+$ docker build -t frontend .
+
+Create logs file:
+$ touch logs.txt
+
+Run backend:
+$ docker run --rm -d -v $(pwd)/logs.txt:/backend-example-docker/logs.txt -p 8000:8000 --name backend backend
+
+Run frontend:
+$ docker run --rm -d -p 5000:5000 --name frontend frontend
+
+Open in browser:
+http://localhost:5000/
+
+Press the button "Press to Test!"
+The button should turn green and the text "Not yet working" should change to "Working!"
+
+Kill the containers:
+$ docker kill backend
+$ docker kill frontend
