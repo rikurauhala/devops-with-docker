@@ -1,0 +1,11 @@
+Pull the image:
+$ docker pull devopsdockeruh/heroku-example
+
+Tag the image:
+$ docker tag devopsdockeruh/heroku-example registry.heroku.com/docker-rvr/web
+
+Login to Heroku:
+$ heroku container:login
+
+Push to Heroku:
+$ docker push registry.heroku.com/docker-rvr/web
