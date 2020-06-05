@@ -1,4 +1,10 @@
-This is the readme, use input "basics" to complete this exercise.
+Run the container:
+$ docker run -it devopsdockeruh/pull_exercise
+
+Navigate to:
+https://hub.docker.com/r/devopsdockeruh/pull_exercise
+
+Enter the password "basics" as instructed on the Docker Hub page.
 
 You found the correct password. Secret message is:
 "This is the secret message"
