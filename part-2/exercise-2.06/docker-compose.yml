@@ -11,6 +11,8 @@ services:
     build: backend
     ports:
       - 8000:8000
+    volumes: 
+      - ./logs.txt:/backend-example-docker/logs.txt
     environment:
       - REDIS=redis
       - DB_USERNAME=postgres

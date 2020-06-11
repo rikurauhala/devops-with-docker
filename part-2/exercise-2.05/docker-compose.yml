@@ -2,17 +2,19 @@ version: '3.8'
 
 services: 
   frontend: 
+    container_name: frontend
     build: frontend
     ports:
       - 5000:5000
-    container_name: frontend
   backend: 
+    container_name: backend
     build: backend
     ports:
       - 8000:8000
+    volumes: 
+      - ./logs.txt:/backend-example-docker/logs.txt
     environment:
       - REDIS=redis
-    container_name: backend
   redis:
-    image: redis
     container_name: redis
+    image: redis

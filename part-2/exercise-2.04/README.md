@@ -7,5 +7,5 @@ $ git clone https://github.com/docker-hy/scaling-exercise
 
 ## Scale the compute containers
 ```bash
-$ docker-compose up -d --scale compute=3
+$ docker-compose up -d --scale compute=5
 ```
